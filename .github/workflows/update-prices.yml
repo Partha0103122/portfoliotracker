@@ -1,0 +1,38 @@
+name: Update Stock Prices
+
+on:
+  schedule:
+    # Every 15 mins, Mon-Fri, 03:45-10:00 UTC (= 09:15-15:30 IST)
+    - cron: '45 3 * * 1-5'
+    - cron: '0,15,30,45 4-9 * * 1-5'
+    - cron: '0 10 * * 1-5'
+  workflow_dispatch: # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance requests
+
+      - name: Fetch prices and write prices.json
+        run: python fetch_prices.py
+
+      - name: Commit and push prices.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add prices.json
+          git diff --staged --quiet || git commit -m "prices: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

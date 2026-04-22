@@ -1,0 +1,26 @@
+{
+  "updated": "2026-04-17T15:30:00+05:30",
+  "updated_epoch": 1744984200,
+  "market": "closed",
+  "fetched": 16,
+  "total": 16,
+  "errors": [],
+  "prices": {
+    "M&MFIN": 280.15,
+    "VGUARD": 328.85,
+    "INDHOTEL": 615.55,
+    "WABAG": 1389.50,
+    "HDFCBANK": 795.00,
+    "DABUR": 442.85,
+    "WONDERLA": 539.45,
+    "PVRINOX": 1032.10,
+    "AHLUCONT": 834.05,
+    "AXISBANK": 1349.60,
+    "RELIANCE": 1347.40,
+    "ICICIBANK": 1346.80,
+    "BHARTIARTL": 1846.90,
+    "M&M": 3200.20,
+    "LT": 4096.10,
+    "INDIGO": 4608.00
+  }
+}

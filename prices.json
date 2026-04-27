@@ -1,31 +1,33 @@
 {
-  "updated": "2026-04-27T11:57+05:30",
-  "updated_epoch": 1777271246,
+  "updated": "2026-04-27T14:35+05:30",
+  "updated_epoch": 1777280739,
   "market": "open",
-  "fetched": 12,
+  "fetched": 10,
   "total": 16,
   "errors": [
-    "M&MFIN",
     "WABAG",
+    "DABUR",
+    "RELIANCE",
     "ICICIBANK",
-    "INDIGO"
+    "BHARTIARTL",
+    "M&M"
   ],
   "prices": {
-    "VGUARD": 49230.71,
-    "INDHOTEL": 648.25,
-    "HDFCBANK": 787.9,
-    "DABUR": 455.2,
-    "WONDERLA": 529.05,
-    "PVRINOX": 49230.71,
-    "AHLUCONT": 49230.71,
-    "AXISBANK": 1316.9,
-    "RELIANCE": 49230.71,
-    "BHARTIARTL": 1821.9,
-    "M&M": 49230.71,
-    "LT": 4063.4,
-    "M&MFIN": 280.15,
+    "M&MFIN": 49230.71,
+    "VGUARD": 332.35,
+    "INDHOTEL": 648.55,
+    "HDFCBANK": 790.1,
+    "WONDERLA": 527.1,
+    "PVRINOX": 1020.4,
+    "AHLUCONT": 887.2,
+    "AXISBANK": 1323.3,
+    "LT": 4058.5,
+    "INDIGO": 4567.5,
     "WABAG": 1389.5,
+    "DABUR": 442.85,
+    "RELIANCE": 1347.4,
     "ICICIBANK": 1346.8,
-    "INDIGO": 4608.0
+    "BHARTIARTL": 1846.9,
+    "M&M": 3200.2
   }
 }
